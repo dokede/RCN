@@ -1,4 +1,4 @@
-# ML — Ekslporacja Rejestru Cen Nieruchomości w mieście Warszawa 🧠📊
+# ML — Eksploracja Rejestru Cen Nieruchomości w mieście Warszawa 🧠📊
 
 To repozytorium zawiera analizę cen nieruchomości w mieście Warszawa w okresie 2015 - 2025
 
