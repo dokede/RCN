@@ -13,10 +13,7 @@ RCN/
 │   ├── inflacja.csv              # Surowe dane inflacyjne
 │   ├── inflacja_prepared.csv     # Przekształcone dane inflacyjne
 │   ├── sales_random.csv          # Dane transakcyjne (próbka)
-├── models/
-│   ├── model_linear_regression.pkl
-│   ├── model_random_forest.pkl
-│   └── model_xgboost.pkl
+├── images/                       # Obrazy
 ├── inflacja.ipynb                # Eksploracja i analiza danych inflacyjnych
 ├── rcn.ipynb                     # Eksploracja danych transakcyjnych
 ├── train_models.py               # Skrypt trenujący modele
