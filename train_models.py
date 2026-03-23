@@ -6,13 +6,14 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import root_mean_squared_error, r2_score
 from xgboost import XGBRegressor
+import matplotlib.pyplot as plt
 
 # ── Folder na modele ───────────────────────────────────────────────────────────
 os.makedirs("models", exist_ok=True)
 
 # ── 1. Wczytanie danych ────────────────────────────────────────────────────────
 print("▶ Wczytywanie data_processed.csv...")
-df = pd.read_csv(r"data\data_processed.csv")
+df = pd.read_csv(r"data\data_processed.csv", index_col=0)
 
 X = df.drop(columns=["amount"])
 y = df["amount"]
@@ -55,3 +56,13 @@ with open("models/model_xgboost.pkl", "wb") as f:
     pickle.dump(models["XGBoost"], f)
 
 print("✅ Gotowe! Zapisano modele w folderze models/")
+
+importances = pd.Series(models["Random Forest"].feature_importances_, index=X.columns)
+importances = importances.sort_values(ascending=True)
+
+plt.figure(figsize=(8, 6))
+importances.plot(kind='barh')
+plt.title('Feature Importance — Random Forest')
+plt.xlabel('Ważność')
+plt.tight_layout()
+plt.show()
