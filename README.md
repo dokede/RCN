@@ -60,7 +60,24 @@ Ważność cech wg Random Forest
 | Random Forest     |  55 048    | 0.9425   | 144 874    | 0.5991   |
 | XGBoost           | 109 275    | 0.7735   | 141 543    | 0.6173   |
 
-Random Forest wykazuje oznaki przeuczenia (Train R² 0.94 vs Test R² 0.60). Kolejnym krokiem jest wzbogacenie danych o lokalizację oraz regularyzacja modeli.
+Random Forest wykazuje oznaki przeuczenia (Train R² 0.94 vs Test R² 0.60). Kolejnym krokiem jest regularyzacja modeli.
+
+
+## 🔧 Udoskonalenie modeli
+
+W pierwszej fazie projektu zastosowano modele bazowe z domyślnymi parametrami. Następnie przeprowadzono strojenie hiperparametrów w celu poprawy jakości predykcji.
+W efekcie uzyskano lepszą generalizację modeli, szczególnie w przypadku algorytmów Random Forest i XGBoost, poprzez redukcję przeuczenia.
+
+
+| Model             | Train RMSE | Train R² | Test RMSE  | Test R²  |
+|-------------------|------------|----------|------------|----------|
+| Linear Regression | 146 090    | 0.5951   | 146 319    | 0.5911   |
+| Random Forest     | 121 586    | 0.7195   | 139 635    | 0.6276   |
+| XGBoost           | 134 222    | 0.6582   | 138 528    | 0.6335   |
+
+
+
+Kolejnym krokiem jest wzbogacenie danych nowe cechy.
 
 ---
 
