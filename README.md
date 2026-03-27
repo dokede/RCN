@@ -17,7 +17,9 @@ RCN/
 ├── inflacja.ipynb                # Eksploracja i analiza danych inflacyjnych
 ├── rcn.ipynb                     # Eksploracja danych transakcyjnych
 ├── train_models.py               # Skrypt trenujący modele
-└── test_models.py                # Skrypt testujący i porównujący modele
+├── test_models.py                # Skrypt testujący i porównujący modele
+└── train_models_improve.py       # Skrypt trenujący modele z poprawionymi parametrami
+
 ```
 
 ---
@@ -84,3 +86,4 @@ Kolejnym krokiem jest wzbogacenie danych nowe cechy.
 ## 🛠️ Technologie
 
 Python, Pandas, Scikit-learn, XGBoost, Matplotlib, Seaborn
+Python: 3.11.9
