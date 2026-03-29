@@ -5,7 +5,7 @@ from sklearn.metrics import root_mean_squared_error, r2_score
 
 # ── 1. Wczytanie danych ────────────────────────────────────────────────────────
 print("▶ Wczytywanie data_processed.csv...")
-df = pd.read_csv(r"data\data_processed.csv", index_col=0)
+df = pd.read_csv("data/data_processed.csv", index_col=0)
 
 X = df.drop(columns=["amount"])
 y = df["amount"]

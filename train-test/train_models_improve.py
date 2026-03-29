@@ -10,7 +10,7 @@ from xgboost import XGBRegressor
 
 os.makedirs("models", exist_ok=True)
 
-print("▶ Wczytywanie data_processed.csv...")
+print("▶ Wczytywanie data")
 df = pd.read_csv("data/data_processed.csv", index_col=0)
 
 X = df.drop(columns=["amount"])
@@ -26,8 +26,8 @@ models = {
     "Linear Regression": LinearRegression(),
 
     "Random Forest": RandomForestRegressor(
-        n_estimators=100,
-        max_depth=10,
+        n_estimators=150,
+        max_depth=8,
         min_samples_leaf=5,
         random_state=40,
     ),
@@ -41,8 +41,6 @@ models = {
         verbosity=0,
     ),
 }
-
-
 
 results = {}
 
