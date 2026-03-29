@@ -81,8 +81,23 @@ W efekcie uzyskano lepszą generalizację modeli, szczególnie w przypadku algor
 | XGBoost           | 134 222    | 0.6582   | 138 528    | 0.6335   |
 
 
+## 🔧 Udoskonalenie modeli v2 - feature engineering
 
-Kolejnym krokiem jest wzbogacenie danych nowe cechy.
+| Model             | Train RMSE | Train R² | Test RMSE  | Test R²  |
+|-------------------|------------|----------|------------|----------|
+| Linear Regression | 131788     | 0.6705   | 130983     | 0.6723   |
+| Random Forest     | 108260     | 0.7776   | 118357     | 0.7324   |
+| XGBoost           | 108019     | 0.7786   | 114113     | 0.7513   |
+
+W tym etapie uzupełniono zbiór o współrzędne lokalizacyjne (lat, lon). Dodano kolumnę obliczającą odległość od centrum Warszawy.
+Dodanie nowych cech i przekształcenie danych znacząco poprawiło zdolność modeli
+
+---
+
+![learning curve](images/output6.png)
+
+Wykres przedstawia błąd RMSE modelu XGBoost w zależności od liczby próbek treningowych.
+Krzywa treningowa (niebieska) stabilizuje się około 105k, natomiast krzywa walidacyjna (pomarańczowa) stopniowo opada i wypłaszcza się około 115k. Obie krzywe zbiegają się, co świadczy o braku poważnego przeuczenia.
 
 ---
 
