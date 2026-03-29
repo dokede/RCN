@@ -9,16 +9,19 @@ Repozytorium zawiera analizę i modelowanie cen transakcyjnych mieszkań w Warsz
 ```
 RCN/
 ├── data/
-│   ├── data_processed.csv        # Przetworzone dane gotowe do modelowania
-│   ├── inflacja.csv              # Surowe dane inflacyjne
-│   ├── inflacja_prepared.csv     # Przekształcone dane inflacyjne
-│   ├── sales_random.csv          # Dane transakcyjne (próbka)
-├── images/                       # Obrazy
-├── inflacja.ipynb                # Eksploracja i analiza danych inflacyjnych
-├── rcn.ipynb                     # Eksploracja danych transakcyjnych
-├── train_models.py               # Skrypt trenujący modele
-├── test_models.py                # Skrypt testujący i porównujący modele
-└── train_models_improve.py       # Skrypt trenujący modele z poprawionymi parametrami
+│   ├── data_processed.csv            # Przetworzone dane gotowe do modelowania
+│   ├── inflacja.csv                  # Surowe dane inflacyjne
+│   ├── inflacja_prepared.csv         # Przekształcone dane inflacyjne
+│   └── sales_random.csv              # Dane transakcyjne (próbka)
+├── eda/
+│    ├── inflacja.ipynb               # Eksploracja i analiza danych inflacyjnych
+│    └── rcn.ipynb                    # Eksploracja danych transakcyjnych
+├── images/                           # Obrazy
+├── train-test/
+│    ├── train_models.py              # Skrypt trenujący modele
+│    ├── test_models.py               # Skrypt testujący i porównujący modele
+│    └── train_models_improve.py      # Skrypt trenujący modele z poprawionymi parametrami
+└── requirements.txt
 
 ```
 
