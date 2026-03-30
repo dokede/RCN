@@ -85,9 +85,9 @@ W efekcie uzyskano lepszą generalizację modeli, szczególnie w przypadku algor
 
 | Model             | Train RMSE | Train R² | Test RMSE  | Test R²  |
 |-------------------|------------|----------|------------|----------|
-| Linear Regression | 131788     | 0.6705   | 130983     | 0.6723   |
-| Random Forest     | 108260     | 0.7776   | 118357     | 0.7324   |
-| XGBoost           | 108019     | 0.7786   | 114113     | 0.7513   |
+| Linear Regression | 131 788    | 0.6705   | 130 983    | 0.6723   |
+| Random Forest     | 108 260    | 0.7776   | 118 357    | 0.7324   |
+| XGBoost           | 108 019    | 0.7786   | 114 113    | 0.7513   |
 
 W tym etapie uzupełniono zbiór o współrzędne lokalizacyjne (lat, lon). Dodano kolumnę obliczającą odległość od centrum Warszawy.
 Dodanie nowych cech i przekształcenie danych znacząco poprawiło zdolność modeli
@@ -101,6 +101,9 @@ Krzywa treningowa (niebieska) stabilizuje się około 105k, natomiast krzywa wal
 
 ---
 
+W kolejnym etpie - zwiększenie zbioru 
+
+---
 ## 🛠️ Technologie
 
 Python, Pandas, Scikit-learn, XGBoost, Matplotlib, Seaborn
